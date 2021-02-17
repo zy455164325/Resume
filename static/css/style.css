@@ -25,6 +25,16 @@
 .icon-delete:before { content: "\e61b"; }
 .icon-trophy:before { content: "\e80b"; }
 
+/*正文字体*/
+.text-font{
+    color: rgb(51, 51, 51);
+    font-family: 'microsoft yahei';
+    font-size: 15px;
+    display: inline !important;
+    /**line-height: 25px;*/
+}
+
+
 span {
     display: inline-block;
 }
@@ -169,7 +179,7 @@ progress::-moz-progress-value {
     margin-bottom: 20px;
 }
 
-.weixin{
+.git{
     margin-top: 20px;
     background-color: #e0eaf0;   
     position: relative;
@@ -177,9 +187,31 @@ progress::-moz-progress-value {
     padding-bottom: 40px;
     text-align: center;
 }
-
-.weixin img{
+/*git配置指向图片  匹配.git img标签*/
+.git img{
+    content: url("../image/GitHubIMG.png");
     width: 200px;
+    height:200px;
+}
+
+/*link[href='https://zy455164325.github.io/Resume/']*/
+/*    !**content: url("");/*/
+/*}*/
+
+
+
+.weixin{
+     margin-top: 20px;
+     background-color: #e0eaf0;
+     position: relative;
+     padding-top: 40px;
+     padding-bottom: 40px;
+     text-align: center;
+ }
+.weixin img{
+    content: url("../image/WechatIMG.jpeg");
+    width: 200px;
+    height:200px;
 }
 
 .left-label {
@@ -188,11 +220,9 @@ progress::-moz-progress-value {
 }
 
 .portrait {
-    margin: 0 auto;
-    margin-top:20px;
-    margin-bottom: 10px;
-    background-image:url('https://avatars0.githubusercontent.com/u/21081491?v=3&s=460');
-    background-size: 120%;
+    margin: 20px auto 10px;
+    background-image: url("../image/me.jpg");
+    background-size: 95%;
     background-position:center;
     border-radius:50%;
     border:5px solid #607d8b;
